@@ -1,12 +1,7 @@
 									ARTIFACT REPOSITORY TOOL - NEXUS
-													by
-												Kastro Kiran V
+		
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-------------
-Demo
--------------
-In this demo i will show how to setup Nexus and Jenkins, and then we will see how to push the Artifacts into the Nexus Repo.
 
 Step 1: Launch Ubuntu VM (24.04), t2.large, EBS: 28GB
 Open the below ports (optional)
@@ -100,7 +95,7 @@ Goto MobaXTerm ---> Come out of the terminal ---> exit
 
 Note: Please follow the next steps as discussed in the video.
 
-Git Repo URL for Nexus Code: https://github.com/KastroVKiran/Nexus-Demo.git
+Git Repo URL for Nexus Code: https://github.com/Suneel-717/Nexus-Demo.git
 -----------------
 Final Script
 -----------------
@@ -112,7 +107,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/KastroVKiran/Nexus-Demo.git'
+                git branch: 'main', url: 'https://github.com/Suneel-717/Nexus-Demo.git'
             }
         }
         stage('Compile') {
@@ -141,3 +136,4 @@ pipeline {
 }
 
 ---> Apply ---> Save ---> Build the job
+
